@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shree Panchayat Secoundary School</title>
+    <link rel="stylesheet" href="rules.css" />
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.jpg" alt="School Logo" />
+      <h1>Shree Panchayat Secoundary School</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="admisssion.html">Admission</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>School Rules</h2>
+      <p>
+        At My School, we believe in maintaining a disciplined, respectful, and
+        safe environment for all students. Please adhere to the following rules:
+      </p>
+
+      <div class="rule">
+        <button class="accordion">Respect</button>
+        <div class="panel">
+          <p>
+            Treat teachers, staff, and fellow students with kindness and
+            respect.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Attendance</button>
+        <div class="panel">
+          <p>
+            Regular attendance is crucial for your academic success. Always be
+            on time.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Discipline</button>
+        <div class="panel">
+          <p>
+            Follow the classroom rules and guidelines for a productive learning
+            environment.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Uniform</button>
+        <div class="panel">
+          <p>
+            Students are required to wear the school uniform every day unless
+            otherwise instructed.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Mobile Phones</button>
+        <div class="panel">
+          <p>
+            Mobile phones should be switched off and kept in the student's bag
+            during school hours. Use of phones is only permitted with teacher
+            permission for educational purposes.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Dress Code</button>
+        <div class="panel">
+          <p>
+            The dress code should be followed at all times. Students should
+            ensure they wear appropriate clothing that is clean and tidy,
+            maintaining a professional appearance at all times.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Bullying</button>
+        <div class="panel">
+          <p>
+            Bullying of any kind, whether physical or emotional, is strictly
+            prohibited. All students should feel safe and respected in the
+            school environment.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Classroom Behavior</button>
+        <div class="panel">
+          <p>
+            Students should maintain good behavior in the classroom. Disruptive
+            behavior will not be tolerated, and respect for the teacher and
+            peers is expected at all times.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Drugs and Harmful Substances</button>
+        <div class="panel">
+          <p>
+            The use or possession of drugs, alcohol, or any harmful substances
+            is strictly forbidden. Any violation of this rule will result in
+            severe disciplinary action.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Respect for Property</button>
+        <div class="panel">
+          <p>
+            Students are expected to take care of school property, including
+            books, furniture, and equipment. Damaging property will lead to
+            consequences.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Punctuality</button>
+        <div class="panel">
+          <p>
+            Being punctual is crucial. Arriving late to class or school disrupts
+            the learning process, and it is important to arrive on time for all
+            activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="rule">
+        <button class="accordion">Positive Attitude</button>
+        <div class="panel">
+          <p>
+            Maintain a positive attitude toward your studies and activities. A
+            positive mindset contributes to your success and a healthy school
+            environment.
+          </p>
+        </div>
+      </div>
+
+      <p>Thank you for adhering to the rules!</p>
+    </div>
+
+    <footer>
+      <p>Made by Tapan Poudel.</p>
+      <a
+        href="https://www.facebook.com/share/1DYV3WEHPx/"
+        target="_blank"
+        class="facebook-icon"
+      >
+        <i class="fab fa-facebook-square"></i> Follow us on Facebook
+      </a>
+    </footer>
+
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+
+      accordions.forEach((acc) => {
+        acc.addEventListener("click", function () {
+          this.classList.toggle("active");
+
+          const panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

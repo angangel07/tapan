@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Panchayat Secoundary School</title>
+    <link rel="stylesheet" href="notices.css"> 
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <img src="./images/logo.jpg" alt="School Logo">
+        <h1>Shree Panchayat Secoundary School</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="admisssion.html">Admission</a></li>
+        </ul>
+    </nav>
+
+   
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search Notices..." onkeyup="filterNotices()">
+    </div>
+
+    <div class="container">
+        <section id="notices">
+            <h2>Important Notices</h2>
+
+            <div class="notice" onclick="toggleNotice(this)">
+                <h3>Admissions Now Open!</h3>
+                <p>If you're interested in joining our school, applications for the upcoming academic year are now open! Please refer to the admission section for more information.</p>
+                <span class="show-more"></span>
+            </div>
+
+            <div class="notice" onclick="toggleNotice(this)">
+                <h3>Teacher Recruitment</h3>
+                <p>We are hiring teachers for various subjects. If you're interested, please send your resume to <strong>panchayat46@gmail.com</strong>.</p>
+                <span class="show-more"></span>
+            </div>
+
+            <div class="notice" onclick="toggleNotice(this)">
+                <h3>Holiday Announcement</h3>
+                <p>The school will remain closed from <strong>February 20th to February 25th</strong> for the upcoming holiday. Enjoy your break!</p>
+                <span class="show-more"></span>
+            </div>
+
+            <div class="notice" onclick="toggleNotice(this)">
+                <h3>Parent-Teacher Meeting</h3>
+                <p>The next parent-teacher meeting is scheduled for <strong>March 5th, 2025</strong>. We encourage all parents to attend and discuss their child's progress.</p>
+                <span class="show-more"></span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Made by Tapan Poudel.</p>
+        <a href="https://www.facebook.com/share/1DYV3WEHPx/" target="_blank" class="facebook-icon">
+            <i class="fab fa-facebook-square"></i> Follow us on Facebook
+        </a>
+    </footer>
+
+    <script>
+        
+        function toggleNotice(notice) {
+            notice.classList.toggle('show');
+        }
+
+        
+        function filterNotices() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const notices = document.querySelectorAll('.notice');
+
+            notices.forEach((notice) => {
+                const noticeText = notice.textContent.toLowerCase();
+                if (noticeText.includes(searchInput)) {
+                    notice.classList.remove('hidden');
+                } else {
+                    notice.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

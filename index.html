@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panchayat School</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./images/logo.jpg" alt="School Logo" class="school-logo">
+            <h1>Welcome to Panchayat School</h1>
+            <p>Located in the heart of Pathari Shanishchare-1, Morang!</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="admisssion.html">Admission</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <div class="intro">
+                <h2>Welcome to Panchayat!</h2>
+                <p>Welcome to Panchayat, located in the heart of Pathari Shanishchare-1, Morang! We are dedicated to providing quality education and nurturing young minds to become the leaders of tomorrow.
+
+                    At Panchayat, we offer a diverse range of courses that foster academic, creative, and personal growth. Our dedicated staff, modern facilities, and engaging learning environment help students reach their full potential.
+                    
+                    We believe in creating a strong foundation for each student, not just academically, but socially and morally as well. With values such as respect, discipline, and integrity, our students are encouraged to thrive in all aspects of life..</p>
+            </div>
+            <div class="benefits">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Experienced Faculty</li>
+                    <li>Modern Facilities</li>
+                    <li>Extracurricular Activities</li>
+                    <li>Community Engagement</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="events-container">
+                <div class="event" onclick="toggleEventDetails(this)">
+                    <img src="./images/sport1.jpg" alt="Sports Week">
+                    <img src="./images/sports.jpg" alt="Sports Week">
+                    <img src="./images/sports1.jpg" alt="Sports Week">
+                    <h3>Sports Week</h3>
+                    <p>Join us for an exciting week of sports competitions and team activities!</p>
+                    <div class="event-details">
+                        <p>Date: March 5-10, 2025</p>
+                        <p>Location: School Playground</p>
+                    </div>
+                </div>
+
+                <div class="event" onclick="toggleEventDetails(this)">
+                    <img src="./images/scienjpg" alt="Science Exhibition">
+                    <img src="./images/science1.jpg" alt="Science Exhibition">
+                    <h3>Science Exhibition</h3>
+                    <p>Explore amazing projects and innovations by our students!</p>
+                    <div class="event-details">
+                        <p>Date: April 15, 2025</p>
+                        <p>Location: School Grounds</p>
+                    </div>
+                </div>
+
+                <div class="event" onclick="toggleEventDetails(this)">
+                    <img src="H:\School website\images\food.jpg" alt="Food Festival">
+                    <img src="H:\School website\images\food1.jpg" alt="Food Festival">
+                    <h3>Food Festival</h3>
+                    <p>Enjoy a delightful array of dishes prepared by students and faculty!</p>
+                    <div class="event-details">
+                        <p>Date: May 20, 2025</p>
+                        <p>Location: School Grounds</p>
+                    </div>
+                </div>
+
+                <div class="event" onclick="toggleEventDetails(this)">
+                    <img src="H:\School website\images\art.jpg" alt="Arts Exhibition">
+                    <img src="H:\School website\images\art1.jpg" alt="Arts Exhibition">
+                    <img src="H:\School website\images\art2.jpg" alt="Arts Exhibition">
+                    <h3>Arts Exhibition</h3>
+                    <p>Discover the creativity and artistic talent of our students.</p>
+                    <div class="event-details">
+                        <p>Date: June 10, 2025</p>
+                        <p>Location: School Grounds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Made by Tapan Poudel.</p>
+        <a href="https://www.facebook.com/share/1DYV3WEHPx/" target="_blank" class="facebook-icon">
+            <i class="fab fa-facebook-square"></i> Follow us on Facebook
+        </a>
+    </footer>
+
+    <script>
+        function toggleEventDetails(event) {
+            const details = event.querySelector('.event-details');
+            details.style.display = (details.style.display === 'block') ? 'none' : 'block';
+        }
+        function toggleEventDetails(event) {
+    
+    const details = event.querySelector('.event-details');
+    details.style.display = (details.style.display === 'block') ? 'none' : 'block';
+
+    event.classList.toggle('expanded');
+}
+
+    </script>
+</body>
+</html>

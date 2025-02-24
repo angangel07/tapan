@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Panchayat Secoundary School</title>
+    <link rel="stylesheet" href="cources.css">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.jpg" alt="School Logo">
+        <h1>Shree Panchayat Secoundary School</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="admisssion.html">Admission</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <p>We offer a wide range of courses to suit your interests and career goals. Explore our courses below:</p>
+            
+            <div class="courses">
+
+                <div class="course" onclick="toggleDetails(this)">
+                    <img src="H:\School website\images\science.jpg" alt="Science">
+                    <h3>Science</h3>
+                    <p>Explore the world of Biology, Physics, and Chemistry.</p>
+                    <div class="course-details">
+                        <p>In this course, you will dive deep into the fundamentals of the natural world. Gain practical experience and knowledge in scientific experiments.</p>
+                    </div>
+                </div>
+
+                <div class="course" onclick="toggleDetails(this)">
+                    <img src="H:\School website\images\civil.jpg" alt="Civil Engineering">
+                    <h3>Civil Engineering</h3>
+                    <p>Build the infrastructure of tomorrow.</p>
+                    <div class="course-details">
+                        <p>This course covers essential topics in engineering, construction, and design. Prepare to become a part of the next generation of architects and engineers.</p>
+                    </div>
+                </div>
+
+                <div class="course" onclick="toggleDetails(this)">
+                    <img src="H:\School website\images\commerce.jpg" alt="Commerce">
+                    <h3>Commerce</h3>
+                    <p>Learn the fundamentals of Business, Accounting, and Economics.</p>
+                    <div class="course-details">
+                        <p>This course introduces you to the world of business and finance. Gain a deep understanding of accounting, marketing, and economics.</p>
+                    </div>
+                </div>
+
+                <div class="course" onclick="toggleDetails(this)">
+                    <img src="H:\School website\images\law.jpg" alt="Law">
+                    <h3>Law</h3>
+                    <p>Study the legal systems and become a future lawyer.</p>
+                    <div class="course-details">
+                        <p>Explore various legal principles, systems, and practices. This course will prepare you for a career in law or related fields.</p>
+                    </div>
+                </div>
+
+                <div class="course" onclick="toggleDetails(this)">
+                    <img src="H:\School website\images\civil.jpg" alt="Fine Arts">
+                    <h3>Fine Arts</h3>
+                    <p>Discover your artistic talent in painting, sculpture, and more.</p>
+                    <div class="course-details">
+                        <p>Learn the techniques and theory behind various forms of art. Develop your creativity and technical skills in this hands-on course.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Made by Tapan Poudel.</p>
+        <a href="https://www.facebook.com/share/1DYV3WEHPx/" target="_blank" class="facebook-icon">
+            <i class="fab fa-facebook-square"></i> Follow us on Facebook
+        </a>
+    </footer>
+
+    <script>
+        function toggleDetails(course) {
+            const details = course.querySelector('.course-details');
+            details.style.display = (details.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

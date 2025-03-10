@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Panchayat School</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="menu-overlay"></div>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.jpg" alt="School Logo" class="school-logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="admisssion.html">Admission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any inquiries or information</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="contact-info" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-card" data-aos="fade-right">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>Pathari Shanishchare-1, Morang</p>
+                    <p>Province 1, Nepal</p>
+                </div>
+
+                <div class="contact-info-card" data-aos="fade-up">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Numbers</h3>
+                    <p>Main: +977 984-2085094</p>
+                    <p>Office: +977 123-456-7890</p>
+                </div>
+
+                <div class="contact-info-card" data-aos="fade-left">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>Panchayat@gmail.com</p>
+                    <p>info@panchayatschool.edu.np</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" data-aos="fade-up">
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="section-header">
+                        <h2>Send Us a Message</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="map-container" data-aos="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4773.03382383233!2d87.56294480449631!3d26.653403767369603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e589bc3b42ceff%3A0xa67d0415f53b3a0b!2sShree%20Panchayat%20Higher%20Secondary%20School!5e1!3m2!1sen!2snp!4v1741593971132!5m2!1sen!2snp"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-connect" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Connect With Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="social-grid">
+                <a href="https://www.facebook.com/share/1DYV3WEHPx/" class="social-card" target="_blank" data-aos="zoom-in">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Follow us for updates</p>
+                </a>
+                <a href="#" class="social-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>Join the conversation</p>
+                </a>
+                <a href="#" class="social-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>See our moments</p>
+                </a>
+                <a href="#" class="social-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Watch our videos</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Pathari Shanishchare-1, Morang</p>
+                <p><i class="fas fa-phone"></i> +977 123-456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@panchayatschool.edu.np</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admisssion.html">Admission</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1DYV3WEHPx/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Panchayat School. All rights reserved. | Designed by Tapan Poudel</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+        });
+
+        document.querySelector('.menu-overlay').addEventListener('click', function() {
+            this.classList.remove('active');
+            document.getElementById('mobile-menu').classList.remove('active');
+            document.querySelector('.nav-menu').classList.remove('active');
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - Panchayat School</title>
+    <link rel="stylesheet" href="admission.css">
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="menu-overlay"></div>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.jpg" alt="School Logo" class="school-logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="admisssion.html" class="active">Admission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Join Our School</h1>
+            <p>Begin your journey towards excellence with Panchayat School</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="admission-process" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Admission Process</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="process-grid">
+                <div class="process-card" data-aos="fade-up">
+                    <div class="process-icon">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="step-number">1</span>
+                    </div>
+                    <h3>Submit Application</h3>
+                    <p>Fill out the online application form with all required information and documents.</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span class="step-number">2</span>
+                    </div>
+                    <h3>Document Verification</h3>
+                    <p>Our team will verify your submitted documents and academic records.</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-icon">
+                        <i class="fas fa-user-graduate"></i>
+                        <span class="step-number">3</span>
+                    </div>
+                    <h3>Entrance Test</h3>
+                    <p>Take the entrance test to evaluate your academic readiness.</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-icon">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="step-number">4</span>
+                    </div>
+                    <h3>Final Admission</h3>
+                    <p>Complete the admission process by paying fees and receiving confirmation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="admission-form" data-aos="fade-up">
+            <div class="form-container">
+                <div class="form-content">
+                    <div class="section-header">
+                        <h2>Application Form</h2>
+                        <div class="underline"></div>
+                    </div>
+                    <form class="admission-form" id="admissionForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" name="full_name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dob">Date of Birth</label>
+                                <input type="date" id="dob" name="dob" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="parent-name">Parent/Guardian Name</label>
+                                <input type="text" id="parent-name" name="parent_name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="parent-phone">Parent/Guardian Phone</label>
+                                <input type="tel" id="parent-phone" name="parent_phone" required>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="address">Address</label>
+                                <textarea id="address" name="address" rows="3" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="course">Preferred Course</label>
+                                <select id="course" name="course" required>
+                                    <option value="">Select a course</option>
+                                    <option value="science">Science</option>
+                                    <option value="commerce">Commerce</option>
+                                    <option value="arts">Arts & Humanities</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="previous-school">Previous School</label>
+                                <input type="text" id="previous-school" name="previous_school" required>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="documents">Upload Documents</label>
+                                <div class="file-upload">
+                                    <input type="file" id="documents" name="documents" multiple>
+                                    <label for="documents" class="file-label">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <span>Choose Files</span>
+                                    </label>
+                                </div>
+                                <small>Upload previous academic records, birth certificate, and other required documents</small>
+                            </div>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="submit-btn">
+                                Submit Application
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="admission-info" data-aos="fade-up">
+            <div class="info-grid">
+                <div class="info-card requirements" data-aos="fade-right">
+                    <h3><i class="fas fa-list-ul"></i> Requirements</h3>
+                    <ul>
+                        <li>Completed application form</li>
+                        <li>Birth certificate</li>
+                        <li>Previous academic records</li>
+                        <li>Passport size photographs</li>
+                        <li>Transfer certificate (if applicable)</li>
+                        <li>Character certificate</li>
+                    </ul>
+                </div>
+
+                <div class="info-card fees" data-aos="fade-left">
+                    <h3><i class="fas fa-money-bill-wave"></i> Fee Structure</h3>
+                    <ul>
+                        <li>Application Fee: Rs. 500</li>
+                        <li>Admission Fee: Rs. 5,000</li>
+                        <li>Annual Fee: Rs. 25,000</li>
+                        <li>Lab Fee (Science): Rs. 3,000</li>
+                        <li>Computer Lab Fee: Rs. 2,000</li>
+                        <li>Library Fee: Rs. 1,000</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="admission-contact" data-aos="fade-up">
+            <div class="contact-card">
+                <div class="contact-content">
+                    <h2>Need Help?</h2>
+                    <p>Contact our admission office for any queries or assistance</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+977 984-2085094</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>admissions@panchayatschool.edu.np</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Pathari Shanishchare-1, Morang</p>
+                <p><i class="fas fa-phone"></i> +977 123-456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@panchayatschool.edu.np</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admisssion.html">Admission</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1DYV3WEHPx/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Panchayat School. All rights reserved. | Designed by Tapan Poudel</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+        });
+
+        document.querySelector('.menu-overlay').addEventListener('click', function() {
+            this.classList.remove('active');
+            document.getElementById('mobile-menu').classList.remove('active');
+            document.querySelector('.nav-menu').classList.remove('active');
+        });
+
+        // File Upload
+        const fileInput = document.getElementById('documents');
+        const fileLabel = document.querySelector('.file-label span');
+
+        fileInput.addEventListener('change', function() {
+            if (this.files.length > 0) {
+                fileLabel.textContent = `${this.files.length} file(s) selected`;
+            } else {
+                fileLabel.textContent = 'Choose Files';
+            }
+        });
+
+        // Form Submission
+        document.getElementById('admissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your application! We will contact you soon.');
+            this.reset();
+            fileLabel.textContent = 'Choose Files';
+        });
+    </script>
+</body>
+</html>

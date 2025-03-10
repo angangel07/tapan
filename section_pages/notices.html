@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices - Panchayat School</title>
+    <link rel="stylesheet" href="notices.css">
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="menu-overlay"></div>
+    <header>
+        <div class="logo-container">
+            <img src="../images/logo.jpg" alt="School Logo" class="school-logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="notices.html" class="active">Notices</a></li>
+                <li><a href="admisssion.html">Admission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>School Notices</h1>
+            <p>Stay updated with the latest announcements and events</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="notices-search" data-aos="fade-up">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search notices..." onkeyup="filterNotices()">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="admissions">Admissions</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="notices-grid" data-aos="fade-up">
+            <div class="notices-container">
+                <div class="notice-card" data-category="admissions" data-aos="fade-up">
+                    <div class="notice-date">
+                        <span class="day">15</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="notice-content">
+                        <span class="notice-tag admissions">Admissions</span>
+                        <h3>Admissions Now Open for 2024!</h3>
+                        <p>Applications for the upcoming academic year 2024 are now open. Early bird discounts available until April 15th.</p>
+                        <div class="notice-details">
+                            <ul>
+                                <li><i class="fas fa-calendar"></i> Last Date: April 30, 2024</li>
+                                <li><i class="fas fa-clock"></i> Office Hours: 9 AM - 4 PM</li>
+                                <li><i class="fas fa-phone"></i> Contact: +977 984-2085094</li>
+                            </ul>
+                            <a href="admisssion.html" class="notice-link">Apply Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notice-card" data-category="academic" data-aos="fade-up" data-aos-delay="100">
+                    <div class="notice-date">
+                        <span class="day">12</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="notice-content">
+                        <span class="notice-tag academic">Academic</span>
+                        <h3>Teacher Recruitment Drive</h3>
+                        <p>We are hiring experienced teachers for various subjects including Mathematics, Science, and English.</p>
+                        <div class="notice-details">
+                            <ul>
+                                <li><i class="fas fa-graduation-cap"></i> Multiple Positions Available</li>
+                                <li><i class="fas fa-calendar"></i> Interview Dates: March 20-25, 2024</li>
+                                <li><i class="fas fa-envelope"></i> Email: panchayat46@gmail.com</li>
+                            </ul>
+                            <a href="contact.html" class="notice-link">Apply Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notice-card" data-category="events" data-aos="fade-up" data-aos-delay="200">
+                    <div class="notice-date">
+                        <span class="day">20</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="notice-content">
+                        <span class="notice-tag events">Events</span>
+                        <h3>Annual Sports Meet 2024</h3>
+                        <p>Join us for our annual sports meet featuring various athletic competitions and team sports.</p>
+                        <div class="notice-details">
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i> School Sports Ground</li>
+                                <li><i class="fas fa-calendar"></i> Date: March 20-22, 2024</li>
+                                <li><i class="fas fa-clock"></i> Time: 8 AM onwards</li>
+                            </ul>
+                            <a href="#" class="notice-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notice-card" data-category="academic" data-aos="fade-up" data-aos-delay="300">
+                    <div class="notice-date">
+                        <span class="day">25</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="notice-content">
+                        <span class="notice-tag academic">Academic</span>
+                        <h3>Final Exam Schedule</h3>
+                        <p>The final examination schedule for all classes has been released. Please check the detailed timetable.</p>
+                        <div class="notice-details">
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i> Start Date: April 1, 2024</li>
+                                <li><i class="fas fa-clock"></i> Duration: 2 Weeks</li>
+                                <li><i class="fas fa-file-alt"></i> Schedule Available Online</li>
+                            </ul>
+                            <a href="#" class="notice-link">View Schedule <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="notice-subscribe" data-aos="fade-up">
+            <div class="subscribe-card">
+                <div class="subscribe-content">
+                    <h2>Stay Updated!</h2>
+                    <p>Subscribe to our newsletter to receive the latest notices and updates directly in your inbox.</p>
+                    <form class="subscribe-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Pathari Shanishchare-1, Morang</p>
+                <p><i class="fas fa-phone"></i> +977 123-456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@panchayatschool.edu.np</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admisssion.html">Admission</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1DYV3WEHPx/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Panchayat School. All rights reserved. | Designed by Tapan Poudel</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+            document.querySelector('.menu-overlay').classList.toggle('active');
+        });
+
+        document.querySelector('.menu-overlay').addEventListener('click', function() {
+            this.classList.remove('active');
+            document.getElementById('mobile-menu').classList.remove('active');
+            document.querySelector('.nav-menu').classList.remove('active');
+        });
+
+        // Notice Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const noticeCards = document.querySelectorAll('.notice-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                noticeCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Notice Search
+        function filterNotices() {
+            const searchInput = document.getElementById('searchInput');
+            const filter = searchInput.value.toLowerCase();
+            const noticeCards = document.querySelectorAll('.notice-card');
+
+            noticeCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const content = card.querySelector('p').textContent.toLowerCase();
+
+                if (title.includes(filter) || content.includes(filter)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Subscribe Form
+        document.querySelector('.subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing! You will receive our updates soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
